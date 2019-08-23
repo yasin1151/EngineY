@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <MyCommonPath>$(SolutionDir)..\Common</MyCommonPath>
+    <MyIncludePath>$(MyCommonPath)\include</MyIncludePath>
+    <MyLibPath>$(MyCommonPath)\lib</MyLibPath>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="MyCommonPath">
+      <Value>$(MyCommonPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MyIncludePath">
+      <Value>$(MyIncludePath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MyLibPath">
+      <Value>$(MyLibPath)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
